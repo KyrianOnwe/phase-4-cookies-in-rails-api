@@ -38,6 +38,7 @@ module Phase4CookiesInRailsApi
     config.api_only = true
 
     # Adding back cookies and session middleware
+    # **REMEMBER:  MUST add these lines for cookies
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
 
